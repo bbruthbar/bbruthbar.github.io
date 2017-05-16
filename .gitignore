@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+.tmp
+.sass-cache
+app/**/images/*
+components/fonts/*
+components/sass/font-awesome/*
+components/vendor/*
