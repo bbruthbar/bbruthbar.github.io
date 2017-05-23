@@ -36,7 +36,7 @@ nav {
         color: #BCB9AC;
         padding: 10px;
         display: block;
-        font-size: 36px; }
+        font-size: 30px; }
 
 .intro {
   background-color: #f5f4f1;
@@ -46,10 +46,10 @@ nav {
       margin-top: 138px; } }
   @media (min-width: 320px) {
     .intro {
-      margin-top: 95px; } }
+      margin-top: 88px; } }
   @media (min-width: 1024px) {
     .intro {
-      margin-top: 95px; } }
+      margin-top: 88px; } }
   .intro p {
     margin-bottom: 20px; }
   .intro a {

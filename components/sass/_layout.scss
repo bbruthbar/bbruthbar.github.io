@@ -38,7 +38,7 @@ nav {
         color: $greige;
         padding: 10px;
         display: block;
-        font-size: 36px;
+        font-size: 30px;
       }
     }
   }
@@ -52,10 +52,10 @@ nav {
     margin-top: 138px;
   }
   @include breakpoint(phablet){ 
-    margin-top: 95px;
+    margin-top: 88px;
   }
   @include breakpoint(laptop){ 
-    margin-top: 95px;
+    margin-top: 88px;
   }
 
   p{
