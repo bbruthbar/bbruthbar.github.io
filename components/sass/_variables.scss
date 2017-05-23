@@ -5,16 +5,22 @@ $white:         #FFF;
 $black:         #000;
 $gray:          lighten($black, 40%);
 $lightGray:     lighten($black, 60%);
-$blue:          #4F81BD;
+// $blue:          #4F81BD;
 
-$ecru:          #E7E7DE;
-$taupe:         #CDCBA6;
-$jade:          #008891;
-$teal:          #00587A;
-$sapphire:      #0F3057;
+// $ecru:          #E7E7DE;
+// $taupe:         #CDCBA6;
+// $jade:          #008891;
+// $teal:          #00587A;
+// $sapphire:      #0F3057;
 
-$heading:       'Montserrat', Arial, sans-serif;
-$copy:          Helvetica, serif;
+$charcoal:      #33383A;
+$cement:        #5C5C5A;
+$ivory:         #F3F2EE;
+$tan:           #E3DECA;
+$greige:        #BCB9AC;
+  
+$heading:       'Montserrat', Helvetica, sans-serif;
+$copy:          'Cardo', Georgia, serif; 
 
 /*********************
 BREAKPOINTS

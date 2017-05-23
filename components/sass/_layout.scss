@@ -1,126 +1,105 @@
 body {
   font-family: $copy;
-//  font-size: 14px;
-  background-color: lighten($ecru, 5%);
+  background-color: lighten($tan, 5%);
   color: $gray;
+  font: 20px/32px;
 }
 
-a {
-  color: $sapphire;
-}
 // partials
-.sidebar {
-  font-family: $heading;
-  color: $white;
+nav {  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: $charcoal;
+  padding: 12px 0;
   text-align: center;
-  @include GemStone;
-  @include breakpoint(laptop){
-    height: 100%;
-    width: 25%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding: 10px 25px;
-  }
-  
-  .brand {
-    h1 {
-      font-family: $heading;
-      font-size: 48px;
-      margin: 0; 
-      font-weight: 500;
-    }
-    
-    div {
-      font-size: 10px;
-      margin-top: -5px;
-      padding-top: 5px;
-      border-top: 1px dotted $white;  
-    }
+
+  h1 {
+    font-family: $heading;
+    font-size: 38px;
+    text-transform: uppercase;
+    margin: 0 3%; 
+    font-weight: 500;
     display:inline-block;
-    border: 1px solid $white;
-    margin: 25px 0 10px;
-    padding: 25px;
+    color: $ivory;
   }
-  p {
-    margin-top: 0;
-    font-size: 10px;
-  }
+
   ul {
     list-style: none;
     padding: 0;
-    @include breakpoint(phablet) {
-      text-align: center;
-      margin: 10px auto;
-    }      
-    @include breakpoint(laptop) {
-      margin: 55px 0 0;
-    }
+    margin: 10px 3% 0;
+    display: inline-block;
+    
     li {
-      @include breakpoint(phablet) {
-        display: inline-block;
-      }
-      @include breakpoint(laptop) {
-        display: block;
-      }
+      display: inline-block;
       a {
         text-decoration: none;
-        color: $white;
+        color: $greige;
         padding: 10px;
         display: block;
+        font-size: 36px;
       }
     }
   }
-  p:last-child {
-    @include breakpoint(phablet){
-      display: none;
-    }
-    @include breakpoint(laptop){
-      display: block;
-    }
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 90%;
+
+}
+.intro {
+  background-color: lighten($ivory, 1%);
+  border: 30px solid $white;
+
+  @include breakpoint(mobile){ 
+    margin-top: 138px;
   }
+  @include breakpoint(phablet){ 
+    margin-top: 95px;
+  }
+  @include breakpoint(laptop){ 
+    margin-top: 95px;
+  }
+
+  p{
+    margin-bottom: 20px;
+  }
+
+  a {
+    margin-top: 20px;
+    padding: 10px;
+    border: 5px solid $tan;
+    color: $gray;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
 }
 
 .content {
-  @include breakpoint(phablet) {
-    margin: 5%;
-  }
-  @include breakpoint(laptop){
-    margin-left: 33%;
-    margin-right: 4%;
-  }
+  font: 22px/32px $copy;
+
   h1 {
     font-family: $heading;
-    margin-bottom: 0;
-    @include breakpoint(phablet) {
-      display: none;
-    }
-    @include breakpoint(laptop) {
-      display: block;
-    }
+    margin: 0;
   }
+
   h2 {
     font-family: $heading;
-    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
     margin: 35px 0 0 0;
-    padding: 10px;
-//    text-align: center;
+    padding: 0;
+    color: $greige;
   }
   h3 {
     border-top: 1px solid $lightGray;
     border-bottom: 1px solid $lightGray;
-    margin: 10px 0 0;
-    padding: 15px;
+    margin: 10px 0 20px;
+    padding: 15px 0;
     color: $gray;
     font-family: $heading;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+
     .date {
       @include breakpoint(phablet) {      
         display: block;
@@ -134,17 +113,20 @@ a {
     margin-top: 0;
   }
   p {
-    margin: 10px 20px 45px 20px;
+    margin: 0 0 50px;
+  }
+  @include breakpoint(phablet){
+    padding: 8%;
+  }
+  @include breakpoint(mobile){
+    padding: 8%;
+  }
+  @include breakpoint(laptop){
+    padding: 3% 18%;
   }
 }
 
 footer {
-  @include breakpoint(phablet){
-    display: block;
-  }
-  @include breakpoint(laptop){
-    display:none;
-  }
   color: gray;
   font-size: 10px;
   text-align: center;

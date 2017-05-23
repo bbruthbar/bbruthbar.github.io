@@ -1,5 +1,7 @@
 .DS_Store
 node_modules
+githubpages.sublime-project
+githubpages.sublime-workspace
 .tmp
 .sass-cache
 app/**/images/*
