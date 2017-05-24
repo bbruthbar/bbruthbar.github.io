@@ -59,12 +59,16 @@ nav {
     color: #666666;
     text-decoration: none;
     text-transform: uppercase; }
+    .intro a:hover {
+      background-color: #E3DECA; }
 
 .content {
   font: 22px/32px "Cardo", Georgia, serif; }
   .content h1 {
     font-family: "Montserrat", Helvetica, sans-serif;
-    margin-top: 95px; }
+    margin-top: 95px;
+    text-transform: uppercase;
+    font-size: 28px; }
   .content h2 {
     font-family: "Montserrat", Helvetica, sans-serif;
     text-transform: uppercase;
@@ -73,6 +77,8 @@ nav {
     margin: 35px 0 0 0;
     padding: 0;
     color: #BCB9AC; }
+    .content h2:nth-of-type(1) {
+      margin: 0; }
   .content h3 {
     border-top: 1px solid #999999;
     border-bottom: 1px solid #999999;
@@ -90,7 +96,7 @@ nav {
         float: right; } }
   .content h4 {
     margin-top: 0; }
-  .content p {
+  .content p, .content ul {
     margin: 0 0 50px; }
   @media (min-width: 320px) {
     .content {

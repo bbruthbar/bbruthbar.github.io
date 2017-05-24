@@ -69,6 +69,9 @@ nav {
     color: $gray;
     text-decoration: none;
     text-transform: uppercase;
+    &:hover {
+      background-color: $tan;
+    }
   }
 
 }
@@ -78,6 +81,8 @@ nav {
   h1 {
     font-family: $heading;
     margin-top: 95px;
+    text-transform: uppercase;
+    font-size: 28px;
   }
 
   h2 {
@@ -88,6 +93,9 @@ nav {
     margin: 35px 0 0 0;
     padding: 0;
     color: $greige;
+    &:nth-of-type(1){
+      margin:0;
+    }
   }
   h3 {
     border-top: 1px solid $lightGray;
@@ -111,9 +119,10 @@ nav {
   h4 {
     margin-top: 0;
   }
-  p {
+  p, ul {
     margin: 0 0 50px;
   }
+
   @include breakpoint(phablet){
     padding: 8%;
   }
