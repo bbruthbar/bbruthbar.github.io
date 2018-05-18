@@ -1,6 +1,6 @@
 {
   "name": "bbruthbar.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Repository for my github page.",
   "devDependencies": {
     "gulp": "^3.9.1",
