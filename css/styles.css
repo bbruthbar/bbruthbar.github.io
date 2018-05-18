@@ -1,114 +1,87 @@
-@import url("https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans");
 /*********************
 BREAKPOINTS
 *********************/
 body {
-  font-family: "Cardo", Georgia, serif;
-  background-color: #ece8db;
-  color: #666666;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  background: url("../images/jfilipe-unsplash.png") repeat-y fixed 0 0;
+  color: #4A4A4A;
   font: 20px/32px; }
 
-nav {
+.sidebar {
+  height: 100%;
   position: fixed;
-  width: 100%;
+  z-index: 1;
   top: 0;
-  right: 0;
-  background-color: #33383A;
-  padding: 12px 0;
-  text-align: center; }
-  nav h1 {
-    font-family: "Montserrat", Helvetica, sans-serif;
-    font-size: 38px;
-    text-transform: uppercase;
-    margin: 0 3%;
-    font-weight: 500;
-    display: inline-block;
-    color: #F3F2EE; }
-  nav ul {
+  left: 0;
+  overflow-x: hidden;
+  background-color: #ECECEB;
+  border-right: 1px solid #bfbfbf; }
+  .sidebar ul {
     list-style: none;
+    margin: 45px 0;
     padding: 0;
-    margin: 10px 3% 0;
-    display: inline-block; }
-    nav ul li {
-      display: inline-block; }
-      nav ul li a {
-        text-decoration: none;
-        color: #BCB9AC;
-        padding: 10px;
-        display: block;
-        font-size: 30px; }
-
-.intro {
-  background-color: #f5f4f1;
-  border: 30px solid #FFF; }
-  @media (max-width: 320px) {
-    .intro {
-      margin-top: 138px; } }
+    text-align: center; }
+    .sidebar ul li {
+      padding: 22px 0; }
+      .sidebar ul li a {
+        margin: 0;
+        color: #bfbfbf;
+        text-decoration: none; }
+        .sidebar ul li a i {
+          font-size: 22px; }
+        .sidebar ul li a:hover {
+          color: #242424; }
   @media (min-width: 320px) {
-    .intro {
-      margin-top: 88px; } }
+    .sidebar {
+      width: 12%; } }
+  @media (max-width: 320px) {
+    .sidebar {
+      width: 12%; } }
   @media (min-width: 1024px) {
-    .intro {
-      margin-top: 88px; } }
-  .intro p {
-    margin-bottom: 20px; }
-  .intro a {
-    margin-top: 20px;
-    padding: 10px;
-    border: 5px solid #E3DECA;
-    color: #666666;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .intro a:hover {
-      background-color: #E3DECA; }
+    .sidebar {
+      width: 5%; } }
 
 .content {
-  font: 22px/32px "Cardo", Georgia, serif; }
+  width: 60%; }
   .content h1 {
-    font-family: "Montserrat", Helvetica, sans-serif;
-    margin-top: 95px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 28px; }
+    font-size: 72px;
+    letter-spacing: 2.5px;
+    color: #242424;
+    margin: 65px 0 25px; }
   .content h2 {
-    font-family: "Montserrat", Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
+    font-family: "Josefin Sans", Helvetica, sans-serif;
+    font-size: 38px;
     font-weight: 500;
-    margin: 35px 0 0 0;
+    margin: 72px 0 5px 0;
     padding: 0;
-    color: #BCB9AC; }
-    .content h2:nth-of-type(1) {
-      margin: 0; }
-  .content h3 {
-    border-top: 1px solid #999999;
-    border-bottom: 1px solid #999999;
-    margin: 10px 0 20px;
-    padding: 15px 0;
-    color: #666666;
-    font-family: "Montserrat", Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400; }
-    @media (min-width: 320px) {
-      .content h3 .date {
-        display: block; } }
-    @media (min-width: 1024px) {
-      .content h3 .date {
-        float: right; } }
-  .content h4 {
-    margin-top: 0; }
-  .content p, .content ul {
-    margin: 0 0 50px; }
+    color: #7d7d7d;
+    text-transform: uppercase; }
+  .content p, .content ul, .content ol {
+    font: 20px/32px "Open Sans", Helvetica, sans-serif; }
+  .content p {
+    margin: 0 0 35px; }
   @media (min-width: 320px) {
     .content {
-      padding: 8%; } }
+      margin-left: 18%; } }
   @media (max-width: 320px) {
     .content {
-      padding: 8%; } }
+      margin-left: 18%; } }
   @media (min-width: 1024px) {
     .content {
-      padding: 3% 18% 6%; } }
+      margin-left: 8%; } }
 
 footer {
-  color: gray;
   font-size: 10px;
-  text-align: center; }
+  width: 60%; }
+  @media (min-width: 320px) {
+    footer {
+      margin-left: 18%; } }
+  @media (max-width: 320px) {
+    footer {
+      margin-left: 18%; } }
+  @media (min-width: 1024px) {
+    footer {
+      margin-left: 8%; } }

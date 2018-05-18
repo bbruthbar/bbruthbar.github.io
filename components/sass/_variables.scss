@@ -1,26 +1,15 @@
-//@import url("https://fonts.googleapis.com/css?family=Lato|Merriweather:300,700");
-@import url("https://fonts.googleapis.com/css?family=Cardo|Montserrat:300,400,500");
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans');
 
-$white:         #FFF;
+// $offWhite:      #FCFCFC;
 $black:         #000;
-$gray:          lighten($black, 40%);
+$gray:          #4A4A4A;
 $lightGray:     lighten($black, 60%);
-// $blue:          #4F81BD;
 
-// $ecru:          #E7E7DE;
-// $taupe:         #CDCBA6;
-// $jade:          #008891;
-// $teal:          #00587A;
-// $sapphire:      #0F3057;
-
-$charcoal:      #33383A;
-$cement:        #5C5C5A;
-$ivory:         #F3F2EE;
-$tan:           #E3DECA;
-$greige:        #BCB9AC;
+$charcoal:      #242424;
+$cement:        #ECECEB;
   
-$heading:       'Montserrat', Helvetica, sans-serif;
-$copy:          'Cardo', Georgia, serif; 
+$heading:       'Josefin Sans', Helvetica, sans-serif;
+$copy:          'Open Sans', Helvetica, sans-serif; 
 
 /*********************
 BREAKPOINTS
