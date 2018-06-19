@@ -6,3 +6,5 @@ githubpages.sublime-project
 githubpages.sublime-workspace
 components/vendor/*
 package-lock.json
+test.html
+components/sass/_button.scss
