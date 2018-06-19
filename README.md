@@ -10,5 +10,3 @@
 
 ## Demo
 View project demo at [https://www.ruthcirillo.info](https://www.ruthcirillo.info)
-
-
