@@ -71,6 +71,18 @@ body {
     text-transform: uppercase;
   }
 
+  a {
+    color: $charcoal;
+    background-color: $cement;
+    font-weight: bold;
+    padding: 2px 5px;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+      background-color: $charcoal;
+    }
+  }
+
   p, ul, ol {
     font: 20px/32px $copy;
   }

@@ -2,9 +2,7 @@
 .tmp
 .sass-cache
 node_modules
-fonts
 githubpages.sublime-project
 githubpages.sublime-workspace
-components/fonts/*
-components/sass/font-awesome/*
 components/vendor/*
+package-lock.json
