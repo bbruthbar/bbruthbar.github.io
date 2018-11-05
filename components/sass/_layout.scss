@@ -71,6 +71,11 @@ body {
     text-transform: uppercase;
   }
 
+  h3 {
+    color: $charcoal; 
+    margin-bottom: 5px;
+  }
+
   a {
     color: $charcoal;
     background-color: $cement;
@@ -119,4 +124,9 @@ footer {
   @include breakpoint(laptop){
     margin-left: 8%;
   }
+}
+
+//helper
+.hiddenText {
+  display: none;
 }
