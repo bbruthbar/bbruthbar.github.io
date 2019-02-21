@@ -29,16 +29,23 @@ ul.inline-buttons {
   list-style: none;
   padding: 0; }
   ul.inline-buttons li {
+    background-color: #495f75;
     border-radius: 8px;
-    border: 1px solid #999999;
     padding: 8px 16px;
     margin: 16px 16px 16px 0; }
     ul.inline-buttons li i {
       margin-right: 8px; }
     ul.inline-buttons li:hover {
-      background-color: #242424; }
-      ul.inline-buttons li:hover a {
-        color: #FFF; }
+      background-color: #FFF;
+      border: 1px solid #495f75;
+      color: #495f75; }
+    ul.inline-buttons li a {
+      color: #FFF;
+      display: block;
+      text-decoration: none; }
+      ul.inline-buttons li a:hover {
+        color: #495f75;
+        text-decoration: none; }
     @media (min-width: 320px) {
       ul.inline-buttons li {
         display: block; } }
@@ -62,20 +69,24 @@ ul.inline-buttons {
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px; } }
   .grid-container .grid a {
-    color: #FFF;
-    display: block; }
+    color: #495f75;
+    display: block;
+    text-decoration: underline; }
     .grid-container .grid a:hover {
       text-decoration: underline; }
-  .grid-container .grid .tags {
-    color: #ECECEB;
-    display: inline-block;
-    font-style: italic;
-    padding: 8px 8px 8px 0;
-    margin: 8px 4px 4px 0;
-    font-size: 12px; }
   .grid-container.code-samples .grid {
-    border-bottom: 1px solid #f2f2f2;
+    border: 1px solid #495f75;
+    border-left: 12px solid #495f75;
     padding: 16px; }
+    .grid-container.code-samples .grid a {
+      color: #FFF; }
+    .grid-container.code-samples .grid .tags {
+      color: #ECECEB;
+      display: inline-block;
+      font-style: italic;
+      padding: 8px 8px 8px 0;
+      margin: 8px 4px 4px 0;
+      font-size: 12px; }
 
 h1 {
   font-family: "Josefin Sans", Helvetica, sans-serif;
@@ -112,10 +123,8 @@ h5 {
   border-bottom: 1px solid #999999; }
 
 a {
-  color: #242424;
   font-weight: bold;
-  padding: 2px 5px;
-  text-decoration: none; }
+  padding: 2px 5px; }
 
 p, ul, ol {
   font: 20px/26px "Open Sans", Helvetica, sans-serif; }
