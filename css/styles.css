@@ -64,6 +64,8 @@ ul.inline-buttons {
   .grid-container .grid a {
     color: #FFF;
     display: block; }
+    .grid-container .grid a:hover {
+      text-decoration: underline; }
   .grid-container .grid .tags {
     color: #ECECEB;
     display: inline-block;

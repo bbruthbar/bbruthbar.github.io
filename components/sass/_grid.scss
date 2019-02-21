@@ -17,6 +17,10 @@
     a {
       color: $white;
       display:block;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
     .tags {
       color: $cement;
