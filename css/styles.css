@@ -3,100 +3,120 @@
 BREAKPOINTS
 *********************/
 body {
-  font-family: "Open Sans", Helvetica, sans-serif;
-  background: url("../images/jfilipe-unsplash.png") repeat-y fixed 0 0;
   color: #4A4A4A;
-  font: 20px/32px; }
+  font: 20px/32px;
+  font-family: "Open Sans", Helvetica, sans-serif; }
 
-.sidebar {
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  background-color: #ECECEB;
-  border-right: 1px solid #bfbfbf; }
-  .sidebar ul {
-    list-style: none;
-    margin: 45px 0;
-    padding: 0;
-    text-align: center; }
-    .sidebar ul li {
-      padding: 22px 0; }
-      .sidebar ul li a {
-        margin: 0;
-        color: #bfbfbf;
-        text-decoration: none; }
-        .sidebar ul li a i {
-          font-size: 22px; }
-        .sidebar ul li a:hover {
-          color: #242424; }
-  @media (min-width: 320px) {
-    .sidebar {
-      width: 12%; } }
-  @media (max-width: 320px) {
-    .sidebar {
-      width: 12%; } }
-  @media (min-width: 1024px) {
-    .sidebar {
-      width: 5%; } }
+.wrapper {
+  position: relative; }
+  .wrapper .content {
+    margin: 0 auto;
+    width: 80%;
+    padding: 4% 10%; }
+  .wrapper .intro {
+    background: url("../images/jfilipe-unsplash-small.png") fixed 0 0; }
+  .wrapper #front-end-development {
+    background-color: #242424;
+    color: #999999; }
+  .wrapper footer {
+    border-top: 1px solid #f2f2f2;
+    width: 80%;
+    padding: 10px 10%; }
+    .wrapper footer p {
+      font-size: 8px; }
 
-.content {
-  width: 60%; }
-  .content h1 {
-    font-family: "Josefin Sans", Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 72px;
-    letter-spacing: 2.5px;
-    color: #242424;
-    margin: 65px 0 25px; }
-  .content h2 {
-    font-family: "Josefin Sans", Helvetica, sans-serif;
-    font-size: 38px;
-    font-weight: 500;
-    margin: 72px 0 5px 0;
-    padding: 0;
-    color: #7d7d7d;
-    text-transform: uppercase; }
-  .content h3 {
-    color: #242424;
-    margin-bottom: 5px; }
-  .content a {
-    color: #242424;
-    background-color: #ECECEB;
-    font-weight: bold;
-    padding: 2px 5px;
-    text-decoration: none; }
-    .content a:hover {
-      color: #FFF;
+ul.inline-buttons {
+  list-style: none;
+  padding: 0; }
+  ul.inline-buttons li {
+    border-radius: 8px;
+    border: 1px solid #999999;
+    padding: 8px 16px;
+    margin: 16px 16px 16px 0; }
+    ul.inline-buttons li i {
+      margin-right: 8px; }
+    ul.inline-buttons li:hover {
       background-color: #242424; }
-  .content p, .content ul, .content ol {
-    font: 20px/32px "Open Sans", Helvetica, sans-serif; }
-  .content p {
-    margin: 0 0 35px; }
-  @media (min-width: 320px) {
-    .content {
-      margin-left: 18%; } }
-  @media (max-width: 320px) {
-    .content {
-      margin-left: 18%; } }
-  @media (min-width: 1024px) {
-    .content {
-      margin-left: 8%; } }
+      ul.inline-buttons li:hover a {
+        color: #FFF; }
+    @media (min-width: 320px) {
+      ul.inline-buttons li {
+        display: block; } }
+    @media (max-width: 320px) {
+      ul.inline-buttons li {
+        display: block; } }
+    @media (min-width: 1024px) {
+      ul.inline-buttons li {
+        display: inline-block; } }
 
-footer {
-  font-size: 10px;
-  width: 60%; }
+.grid-container {
+  display: grid; }
   @media (min-width: 320px) {
-    footer {
-      margin-left: 18%; } }
+    .grid-container {
+      grid-template-columns: 100%; } }
   @media (max-width: 320px) {
-    footer {
-      margin-left: 18%; } }
+    .grid-container {
+      grid-template-columns: 100%; } }
   @media (min-width: 1024px) {
-    footer {
-      margin-left: 8%; } }
+    .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px; } }
+  .grid-container .grid a {
+    color: #FFF;
+    display: block; }
+  .grid-container .grid .tags {
+    color: #ECECEB;
+    display: inline-block;
+    font-style: italic;
+    padding: 8px 8px 8px 0;
+    margin: 8px 4px 4px 0;
+    font-size: 12px; }
+  .grid-container.code-samples .grid {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 16px; }
 
-.hiddenText {
-  display: none; }
+h1 {
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 72px;
+  letter-spacing: 2.5px;
+  color: #242424;
+  margin: 65px 0 25px; }
+
+h2 {
+  color: #7d7d7d;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  padding: 16px 0;
+  text-transform: capitalize; }
+
+h3 {
+  background-color: #f2f2f2;
+  color: #4A4A4A;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  text-align: center;
+  padding: 16px 0; }
+
+h4 {
+  margin: 0;
+  font-weight: bold; }
+
+h5 {
+  font-style: italic;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999999; }
+
+a {
+  color: #242424;
+  font-weight: bold;
+  padding: 2px 5px;
+  text-decoration: none; }
+
+p, ul, ol {
+  font: 20px/26px "Open Sans", Helvetica, sans-serif; }
+
+p {
+  margin: 0 0 25px; }

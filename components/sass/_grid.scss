@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+
+  @include breakpoint(phablet){
+   grid-template-columns: 100%;
+  }
+
+  @include breakpoint(mobile){
+   grid-template-columns: 100%;
+  }
+
+  @include breakpoint(laptop){
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .grid {
+    a {
+      color: $white;
+      display:block;
+    }
+    .tags {
+      color: $cement;
+      display:inline-block;
+      font-style: italic;
+      padding: 8px 8px 8px 0;
+      margin: 8px 4px 4px 0;
+      font-size: 12px;
+    }
+  }
+
+  &.code-samples .grid {
+    border-bottom: 1px solid $lightestGray;
+    padding: 16px;
+  }
+
+}
