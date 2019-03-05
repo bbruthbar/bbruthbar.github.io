@@ -1,46 +1,34 @@
-var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-//    compass = require('gulp-compass'), // TODO once I know how to use it.
-    connect = require('gulp-connect');
+'use strict';
 
-var sassSources,
-    htmlSources;
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync');
 
-sassSources = ['components/sass/style.scss'];
-htmlSources = '*.html';
+var htmlSources = '*.html';
+var sassSources = './components/sass/**/*.scss';
+sass.compiler = require('node-sass');
 
-gulp.task('html', function(){
-    gulp.src(htmlSources)
-        .pipe(connect.reload());
-})
-
-gulp.task('sass', function(){
-    gulp.src('components/sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('css'));
-})
+gulp.task('sass', function () {
+  return gulp.src(sassSources)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
 
 gulp.task('css', function(){
-    gulp.src('components/vendor/**/*.css')
-        .pipe(gulp.dest('css'));
+	return gulp.src('components/vendor/**/*.css')
+		.pipe(gulp.dest('css'));
 })
 
-gulp.task('fonts', function(){
-    gulp.src('components/fonts/**/*')
-        .pipe(gulp.dest('fonts'));
-})
+gulp.task('serve', gulp.series('sass','css', function(done) {
 
-gulp.task('connect', function(){
-    connect.server({
-        root: '',
-        livereload: true
-    });    
-})
+	browserSync.init({
+			port: "8080",
+			server: "./"
+	});
 
-gulp.task('watch', function(){
-    gulp.watch(htmlSources, ['html']);
-    gulp.watch('components/sass/**/*.scss', ['sass']);
-})
+	gulp.watch(sassSources, gulp.series('sass'));
+	gulp.watch(sassSources).on('change', browserSync.reload);
+	gulp.watch(htmlSources).on('change', browserSync.reload);
 
-//put watch on the end so it runs last
-gulp.task('default', ['html', 'sass', 'css', 'fonts', 'connect', 'watch']);
+	done();
+}));
