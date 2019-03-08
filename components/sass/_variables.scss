@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans');
 
 $white:         #FFF;
 $black:         #000;
-$gray:          #4A4A4A;
-$lightGray:     lighten($black, 60%);
-$lightestGray:  lighten($black, 95%);
-$navyGray:      #495f75;
+$basicGray:     #656565;
+$lightGray:     #76766B; //lighten($black, 66%);
+$lightestGray:  #f6f6f5; //lighten($black, 96%);
+$navyGray:      #4D86A8; 
 
 $charcoal:      #242424;
 $cement:        #ECECEB;
+$whitesmoke:    #F8F8F8;
   
 $heading:       'Josefin Sans', Helvetica, sans-serif;
-$copy:          'Open Sans', Helvetica, sans-serif; 
+$copy:          'Cardo', serif; //'Open Sans', Helvetica, sans-serif; 
 
-/*********************
-BREAKPOINTS
-*********************/
+$copySmallest:  12px;
+$copySmaller:   14px;
+$copySmall:     18px;
+$copyMedium:    24px;
+$copyLarge:     30px;
 
  @mixin breakpoint($point) {
    @if $point == desktop {

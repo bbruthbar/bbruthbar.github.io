@@ -1,60 +1,93 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans");
-/*********************
-BREAKPOINTS
-*********************/
+@import url("https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans");
 body {
-  color: #4A4A4A;
-  font: 20px/32px;
-  font-family: "Open Sans", Helvetica, sans-serif; }
+  color: #656565;
+  font-family: "Cardo", serif; }
 
 .wrapper {
   position: relative; }
+  .wrapper figure img {
+    margin: 0 0 25px;
+    max-width: 100%;
+    height: auto; }
+  .wrapper figure p {
+    font-size: 12px;
+    color: #656565; }
   .wrapper .content {
     margin: 0 auto;
     width: 80%;
-    padding: 4% 10%; }
+    padding: 2% 10% 0 10%;
+    background-color: #FFF;
+    color: #242424; }
   .wrapper .intro {
-    background: url("../images/jfilipe-unsplash-small.png") fixed 0 0; }
-  .wrapper #front-end-development {
-    background-color: #242424;
-    color: #999999; }
+    background-color: #f6f6f5; }
+    .wrapper .intro p {
+      color: #656565;
+      font-size: 14px;
+      margin: 0; }
+  .wrapper .callout {
+    background-color: #F8F8F8;
+    border: 1px solid #f6f6f5;
+    border-radius: 8px;
+    margin: 18px 0;
+    padding: 20px; }
+    .wrapper .callout p {
+      font-style: italic;
+      color: #717171; }
+  .wrapper .tags {
+    color: #76766B;
+    display: inline-block;
+    font-style: italic;
+    margin: 8px 8px 16px 0;
+    font-size: 14px; }
+  .wrapper .hidden-text {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+  .wrapper .center {
+    text-align: center; }
+  .wrapper .add-padding {
+    padding: 16px; }
   .wrapper footer {
-    border-top: 1px solid #f2f2f2;
+    border-top: 1px solid #f6f6f5;
     width: 80%;
     padding: 10px 10%; }
-    .wrapper footer p {
-      font-size: 8px; }
 
-ul.inline-buttons {
+nav ul {
+  font: 14px "Josefin Sans", Helvetica, sans-serif;
   list-style: none;
-  padding: 0; }
-  ul.inline-buttons li {
-    background-color: #495f75;
-    border-radius: 8px;
-    padding: 8px 16px;
-    margin: 16px 16px 16px 0; }
-    ul.inline-buttons li i {
-      margin-right: 8px; }
-    ul.inline-buttons li:hover {
-      background-color: #FFF;
-      border: 1px solid #495f75;
-      color: #495f75; }
-    ul.inline-buttons li a {
-      color: #FFF;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    nav ul li a {
       display: block;
-      text-decoration: none; }
-      ul.inline-buttons li a:hover {
-        color: #495f75;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: #242424; }
+      nav ul li a:hover {
+        color: #4D86A8;
         text-decoration: none; }
-    @media (min-width: 320px) {
-      ul.inline-buttons li {
-        display: block; } }
-    @media (max-width: 320px) {
-      ul.inline-buttons li {
-        display: block; } }
-    @media (min-width: 1024px) {
-      ul.inline-buttons li {
-        display: inline-block; } }
+    nav ul li.current {
+      border-bottom: 6px solid #242424; }
+      nav ul li.current a {
+        color: #242424; }
+  nav ul.menu-icon {
+    margin-bottom: 5%;
+    font-size: 14px; }
+    nav ul.menu-icon li {
+      margin: 0 10px 0 0;
+      padding: 0; }
+      nav ul.menu-icon li a {
+        padding: 10px 4px;
+        color: #76766B; }
+        nav ul.menu-icon li a:hover {
+          color: #4D86A8; }
 
 .grid-container {
   display: grid; }
@@ -65,69 +98,62 @@ ul.inline-buttons {
     .grid-container {
       grid-template-columns: 100%; } }
   @media (min-width: 1024px) {
-    .grid-container {
+    .grid-container.three-column {
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px; } }
   .grid-container .grid a {
-    color: #495f75;
-    display: block;
-    text-decoration: underline; }
-    .grid-container .grid a:hover {
-      text-decoration: underline; }
-  .grid-container.code-samples .grid {
-    border: 1px solid #495f75;
-    border-left: 12px solid #495f75;
-    padding: 16px; }
-    .grid-container.code-samples .grid a {
-      color: #FFF; }
-    .grid-container.code-samples .grid .tags {
-      color: #ECECEB;
-      display: inline-block;
-      font-style: italic;
-      padding: 8px 8px 8px 0;
-      margin: 8px 4px 4px 0;
-      font-size: 12px; }
+    color: #4D86A8; }
+  .grid-container.single-column {
+    grid-template-columns: 1fr; }
 
 h1 {
-  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font: 30px "Josefin Sans", Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 72px;
-  letter-spacing: 2.5px;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
+  letter-spacing: 4px;
   color: #242424;
-  margin: 65px 0 25px; }
+  margin: 0; }
 
 h2 {
-  color: #7d7d7d;
-  font-family: "Josefin Sans", Helvetica, sans-serif;
-  font-size: 32px;
-  font-weight: 500;
+  color: #717171;
+  font: 24px "Josefin Sans", Helvetica, sans-serif;
   margin: 0;
-  padding: 16px 0;
-  text-transform: capitalize; }
+  padding: 16px 0 0;
+  text-shadow: 1px 1px rgba(236, 236, 235, 0.8); }
 
 h3 {
-  background-color: #f2f2f2;
-  color: #4A4A4A;
-  font-family: "Josefin Sans", Helvetica, sans-serif;
-  text-align: center;
-  padding: 16px 0; }
+  color: #717171;
+  font: 18px "Josefin Sans", Helvetica, sans-serif;
+  margin: 0;
+  padding: 16px 0 0; }
 
 h4 {
-  margin: 0;
-  font-weight: bold; }
+  font: 18px "Josefin Sans", Helvetica, sans-serif;
+  font-style: italic;
+  margin: 8px 0;
+  text-decoration: underline; }
 
 h5 {
-  font-style: italic;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999999; }
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline; }
 
 a {
   font-weight: bold;
-  padding: 2px 5px; }
+  color: #4D86A8; }
+  a:hover {
+    text-decoration: none; }
 
 p, ul, ol {
-  font: 20px/26px "Open Sans", Helvetica, sans-serif; }
+  font: 18px "Cardo", serif; }
+
+ul.no-list-style {
+  list-style: none;
+  margin: 16px;
+  padding: 0; }
 
 p {
   margin: 0 0 25px; }
+  p.smallest-text {
+    font-size: 12px; }

@@ -10,38 +10,19 @@
   }
 
   @include breakpoint(laptop){
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    &.three-column {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
   }
   .grid {
     a {
       color: $navyGray;
-      display:block;
-      text-decoration: underline;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
-  &.code-samples .grid {
-    border: 1px solid $navyGray;
-    border-left: 12px solid $navyGray;
-    padding: 16px;
-
-    a {
-      color: $white;
-    }
-
-    .tags {
-      color: $cement;
-      display:inline-block;
-      font-style: italic;
-      padding: 8px 8px 8px 0;
-      margin: 8px 4px 4px 0;
-      font-size: 12px;
-    }
+  &.single-column {
+    grid-template-columns: 1fr;
 
   }
 

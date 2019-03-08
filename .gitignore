@@ -2,9 +2,6 @@
 .tmp
 .sass-cache
 node_modules
-githubpages.sublime-project
-githubpages.sublime-workspace
+bbruthbar.code-workspace
 components/vendor/*
-package-lock.json
-test.html
 components/sass/_button.scss

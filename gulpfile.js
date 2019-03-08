@@ -22,7 +22,6 @@ gulp.task('css', function(){
 gulp.task('serve', gulp.series('sass','css', function(done) {
 
 	browserSync.init({
-			port: "8080",
 			server: "./"
 	});
 

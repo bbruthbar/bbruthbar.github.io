@@ -1,51 +1,64 @@
 h1 {
-    font-family: $heading;
+    font: $copyLarge $heading;
     text-transform: uppercase;
-    font-size: 72px;
-    letter-spacing: 2.5px;
+    text-shadow: 1px 1px rgba(255,255,255,0.8);
+    letter-spacing: 4px;
     color: $charcoal;
-    margin: 65px 0 25px;
+    margin: 0;
   }
 
   h2 {
-    color: lighten($charcoal, 35%);
-    font-family: $heading;
-    font-size: 32px;
-    font-weight: 500;
+    color: lighten($charcoal, 30%);
+    font: $copyMedium $heading;
     margin: 0;
-    padding: 16px 0;
-    text-transform: capitalize;
+    padding: 16px 0 0;
+    text-shadow: 1px 1px rgba(236,236,235,0.8);
   }
 
   h3 {
-    background-color: $lightestGray; 
-    color: $gray;
-    font-family: $heading;
-    text-align: center;
-    padding: 16px 0;
+    color: lighten($charcoal, 30%);
+    font: $copySmall $heading;
+    margin: 0;
+    padding: 16px 0 0;
   }
 
   h4 {
-    margin: 0;
-    font-weight: bold;
+    font: $copySmall $heading;
+    font-style: italic;
+    margin: 8px 0;
+    text-decoration: underline;
   }
 
-  h5 {
-    font-style: italic;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $lightGray;
+  h5 {   
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
   }
 
   a {
     font-weight: bold;
-    padding: 2px 5px;
+    color: $navyGray;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   p, ul, ol {
-    font: 20px/26px $copy;
+    font: $copySmall $copy;
   }
 
-  p{
+  ul.no-list-style {
+    list-style:none;
+    margin: 16px;
+    padding: 0;
+  }
+
+  p {
     margin: 0 0 25px;
+    
+    &.smallest-text {
+      font-size: $copySmallest;
+    }
   }

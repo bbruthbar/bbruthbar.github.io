@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Ruth Cirillo - UFront End developer / User Experience designer based in the Washington D.C. metro area.</title>
+  <meta name="description" content="The personal site of Ruth Cirillo. Front End Developer looking to transition into User Experience Designer. Based in Washington, D.C. metro area. ">  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44684708-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-44684708-1');
+  </script>
+
+
+</head>
+<body>
+  <div class="wrapper">
+    <section class="intro content">   
+      <h1>Ruth Cirillo</h1>
+      <p>Front End developer | User Experience designer.</p>
+      <nav>
+        <ul class="menu-icon"> 
+          <li><a href="https://bbruthbar.github.io/pdf/ruthcirillo-uxd.pdf" target="_blank" title="Download Resume (opens in new window)"><i class="fas fa-file"></i><span class="hidden-text">Download Resume</span></a></li>
+          <li><a href="https://www.linkedin.com/in/ruth-cirillo-62a0572" target="_blank" title="LinkedIn (opens in new window)"><i class="fab fa-linkedin-in"></i><span class="hidden-text">Linkedin</span></a></li>
+          <li><a href="mailto:rbgloria@hotmail.com" target="_blank" title="Contact Me"><i class="fas fa-envelope"></i><span class="hidden-text">Contact Me</span></a></li>
+        </ul>
+      </nav>
+      <nav> 
+        <ul class="menu">
+          <li class="current"><a href="/">Work Samples</a></li>        
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="content">
+      <h2>Designing a Mobile Purchase</h2>
+      <span class="tags"><i class="fas fa-project-diagram"></i> UX Design, User flow, UI Design</span>
+      <div class="callout">
+        <p>In January 2019, I attended a three-day course, “User Experience (UX) Design Training for Successful Software Development” provided by Learning Tree. This an exercise I completed myself after returning home. I have summarized the necessary background information as best as I can without giving the whole course content away (for free).</p>
+        <p>If you would like to view the full-sized images, please <a href="mailto:rbgloria@hotmail.com?subject=Request Full UX Portfolio" target="_blank" title="Contact Me">contact me</a>.</p>
+      </div>
+      <h3>Background</h3>
+			<p>As Roadworthy has grown to a half-billion–dollar company with thousands of employees, their goal continues to be to provide high-end, technologically sophisticated solutions for the real problems that their customers face at a low cost. The company’s vision is “Democratizing technology for the trucking industry”—making solutions that were available only to large truck fleets available to our customers: mid-size, and even small, truck fleets.</p>
+			<h4>The WADI Line of Products</h4>
+			<p>The Wide Area Driver Information (WADI) system consists primarily of data-gathering devices. The data-gathering devices are attached to trucks to gather and broadcast information about those vehicles. Data collected from the devices are available once the vehicle enters or leaves the business’ place of operation. Each data-gathering model is designed to gather specific data (e.g., mileage, tire pressure, brake stroke, etc.). Customers can order these products online using the purchasing web application developed in house.</p>
+        
+      <h3>The Challenge</h3>
+      <p>Design an application so a truck business can place an order on a mobile device.</p>
+      
+      <h3>The Approach</h3>
+      <h4>Persona</h4>
+      <p>Using the background information provided, I created a persona, Abe Abrams. I describe Abe as a twenty something year old mechanic who has been in the field for six years. Most of the times, he knows the device he needs to order but sometimes has difficulty identifying the device especially when it is damaged. He wants to order the correct devices with minimal effort.</p>
+      <h4>Scenario</h4>
+      <p><em>A truck just rolled into the yard with visible damage to its right fender. Abe walks out of his office to check on his driver and the truck. The driver admits that he skimmed a guardrail to avoid a vehicle that was merging aggressively into his lane. No one was hurt and the damage looks superficial. Abe wants to know which device are still working without having to uninstall each device. Abe pulls his phone out of his vest and opens the WADI mobile app.</em></p>
+      <h4>UI Design</h4>
+      <p>For this activity, I decided to create the user flow, or the steps, Abe would take in order to complete a purchase using the Roadworthy mobile app. For the scenario, I assumed that Abe already had an existing Roadworthy account that was tied to his company's account.</p>
+      <p>The user flow started with the three possible scenarios of logging into the Roadworthy app.</p>
+      <figure class="center add-padding"><img src="images/roadworthy-ui-mobile-login-small.png" alt="Mobile UI Design Login Screen. Three possible user flows: Account Creation, Login Existing User, Forgot Password"/>
+        <p>Mobile UI Design Login Screen. Three possible user flows: Account Creation, Login Existing User, Forgot Password</p>
+      </figure>
+      <p>After logging into the Roadworthy app, Abe would see a the page "My Fleet" which listed the trucks that are owned by his company. Abe could either scroll to find the truck that needs new devices or he could take a picture of the truck's license plate number using the phone's built in camera. After taking a picture of the truck's license plate number, the system retrieves the truck's information which includes all WADI devices that are installed on the truck. The app identifies which devices are broadcasting a signal and which are not. Abe can then select the disconnected device, view the product information, select the quantity to order, and select where the device should be delivered.</p>
+      <figure class="center add-padding">
+        <img src="images/roadworthy-ui-loggedin-small.png" alt="Mobile UI Design user flow for logged in user."/>
+        <p>Mobile UI Design user flow for logged in user.</p>
+      </figure>
+      
+
+      <p class="smallest-text"><a href="/">&laquo; Back to Work Samples</a></p>
+    </section>
+    <footer>
+      <p class="smallest-text">&copy; 2019. A basic website. Always a work in progress :)</p>
+    </footer>
+  </div>
+</body>
+</html>
