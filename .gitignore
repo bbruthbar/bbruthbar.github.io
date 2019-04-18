@@ -5,3 +5,4 @@ node_modules
 bbruthbar.code-workspace
 components/vendor/*
 components/sass/_button.scss
+react-projects.html
