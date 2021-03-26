@@ -1,84 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Ruth Cirillo - Front End developer / User Experience designer based in the Washington D.C. metro area.</title>
-  <meta name="description" content="The personal site of Ruth Cirillo. Here you can find some examples of my work as a Front End Developer and User Experience Designer. I am based in Washington, D.C. metro area. ">  
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+      Ruth Cirillo - Front End developer / User Experience designer based in the
+      Washington D.C. metro area.
+    </title>
+    <meta
+      name="description"
+      content="The personal site of Ruth Cirillo. Here you can find some examples of my work as a Front End Developer and User Experience Designer. I am based in Washington, D.C. metro area. "
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44684708-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-44684708-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-44684708-1');
-  </script>
+      gtag("config", "UA-44684708-1");
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="intro content">
+        <h1>Ruth Cirillo</h1>
+        <p>Front End developer | User Experience designer.</p>
+        <nav>
+          <ul class="menu-icon">
+            <li>
+              <a
+                href="https://bbruthbar.github.io/pdf/ruthcirillo-2021.pdf"
+                target="_blank"
+                title="Download Resume (opens in new window)"
+                ><i class="fas fa-file"></i
+                ><span class="hidden-text">Download Resume</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ruth-cirillo-62a0572"
+                target="_blank"
+                title="LinkedIn (opens in new window)"
+                ><i class="fab fa-linkedin-in"></i
+                ><span class="hidden-text">Linkedin</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:rbgloria@hotmail.com"
+                target="_blank"
+                title="Contact Me"
+                ><i class="fas fa-envelope"></i
+                ><span class="hidden-text">Contact Me</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="menu">
+            <li class="current"><a href="/">Work Samples</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="content">
+        <h2>
+          Incorporating Physical Interaction Artifacts to an Existing Case
+          Management System
+        </h2>
+        <span class="tags"
+          ><i class="fas fa-project-diagram"></i> UI Design</span
+        >
+        <div class="callout">
+          <p>
+            This is a high-level description of a project I previously worked
+            on. I have recreated the wireframes. If you would like to view the
+            full-sized images, please
+            <a
+              href="mailto:rbgloria@hotmail.com?subject=Request Full UX Portfolio"
+              target="_blank"
+              title="Contact Me"
+              >contact me</a
+            >.
+          </p>
+        </div>
+        <h3>Background</h3>
+        <p>
+          A federal agency conducts inspections of retailers to determine a
+          retailer's compliance with federal laws and regulations. One aspect of
+          compliance is to determine if a retailer is compliant with the sale of
+          age restricted merchandise. Undercover buy inspections are performed
+          to determine if an establishment violates federal laws and
+          regulations. Inspection results are available in a web based, case
+          management system (CMS). As long as a retailer is in business,
+          multiple inspections can be associated with it.
+        </p>
+        <p>
+          Results from compliance check inspections are used to determine if a
+          retailer is compliant with laws and regulations. If the inspection
+          indicates a potential violation may have occurred, the agency reviews
+          the retailer’s inspection and history before an action is taken
+          against the retailer (warning, monetary penalty, or suspension of sale
+          of regulated merchandise).
+        </p>
+        <p>
+          As part of the review process, an analyst completes a word document
+          form of predefined questions and then uploads the document in the CMS
+          to be associated with the inspection. Multiple levels of review can
+          occur before a final decision is reached.
+        </p>
 
+        <h3>The Challenge</h3>
+        <p>
+          Create a minimum viable product that incorporates the review form
+          document into the CMS as part of the review process. The input from
+          the review document should be visible and editable for the next level
+          of review.
+        </p>
 
-</head>
-<body>
-  <div class="wrapper">
-    <section class="intro content">   
-      <h1>Ruth Cirillo</h1>
-      <p>Front End developer | User Experience designer.</p>
-      <nav>
-        <ul class="menu-icon"> 
-          <li><a href="https://bbruthbar.github.io/pdf/ruthcirillo-fed.pdf" target="_blank" title="Download Resume (opens in new window)"><i class="fas fa-file"></i><span class="hidden-text">Download Resume</span></a></li>
-          <li><a href="https://www.linkedin.com/in/ruth-cirillo-62a0572" target="_blank" title="LinkedIn (opens in new window)"><i class="fab fa-linkedin-in"></i><span class="hidden-text">Linkedin</span></a></li>
-          <li><a href="mailto:rbgloria@hotmail.com" target="_blank" title="Contact Me"><i class="fas fa-envelope"></i><span class="hidden-text">Contact Me</span></a></li>
-        </ul>
-      </nav>
-      <nav> 
-        <ul class="menu">
-          <li class="current"><a href="/">Work Samples</a></li>        
-          <li><a href="/about.html">About</a></li>
-        </ul>
-      </nav>
-    </section>
-    <section class="content">
-      <h2>Incorporating Physical Interaction Artifacts to an Existing Case Management System</h2>
-      <span class="tags"><i class="fas fa-project-diagram"></i> UI Design</span>
-      <div class="callout">
-        <p>This is a high-level description of a project I previously worked on. I have recreated the wireframes. If you would like to view the full-sized images, please <a href="mailto:rbgloria@hotmail.com?subject=Request Full UX Portfolio" target="_blank" title="Contact Me">contact me</a>.</p>
-      </div>
-      <h3>Background</h3>
-      <p>A federal agency conducts inspections of retailers to determine a retailer's compliance with federal laws and regulations. One aspect of compliance is to determine if a retailer is compliant with the sale of age restricted merchandise. Undercover buy inspections are performed to determine if an establishment violates federal laws and regulations. Inspection results are available in a web based, case management system (CMS). As long as a retailer is in business, multiple inspections can be associated with it.</p>
-      <p>Results from compliance check inspections are used to determine if a retailer is compliant with laws and regulations. If the inspection indicates a potential violation may have occurred, the agency reviews the retailer’s inspection and history before an action is taken against the retailer (warning, monetary penalty, or suspension of sale of regulated merchandise).</p>
-      <p>As part of the review process, an analyst completes a word document form of predefined questions and then uploads the document in the CMS to be associated with the inspection. Multiple levels of review can occur before a final decision is reached.</p>
+        <h3>The Approach</h3>
+        <h4>User Flow</h4>
+        <p>
+          Once the requirements were set, I updated the user flow to include the
+          review form as part of the web application. This eliminated the step
+          to upload and associate the review document to the inspection under
+          review. I created a series of low-fidelity wireframes and a wireflow
+          to show how a user would go through the review process.
+        </p>
 
-      <h3>The Challenge</h3>
-      <p>Create a minimum viable product that incorporates the review form document into the CMS as part of the review process. The input from the review document should be visible and editable for the next level of review. </p>
-      
-      <h3>The Approach</h3>
-      <h4>User Flow</h4>
-      <p>Once the requirements were set, I updated the user flow to include the review form as part of the web application. This eliminated the step to upload and associate the review document to the inspection under review. I created a series of low-fidelity wireframes and a wireflow to show how a user would go through the review process.</p>
+        <figure class="center add-padding">
+          <img src="images/cms-wireflow.png" alt="Wireflow" />
+          <p>Wireflow of user interaction with web application.</p>
+        </figure>
+        <h4>UI Design</h4>
+        <p>
+          I proposed the UI option for capturing the review analysis within the
+          application. Because the analyst would like to have a side by side
+          view of the retailer’s information and review form, I place the form
+          to overlap the some of the content. The analyst can toggle between the
+          retailer’s information and the review form.
+        </p>
 
-      <figure class="center add-padding"><img src="images/cms-wireflow.png" alt="Wireflow"/>
-        <p>Wireflow of user interaction with web application.</p>
-      </figure>
-      <h4>UI Design</h4>
-      <p>I proposed the UI option for capturing the review analysis within the application. Because the analyst would like to have a side by side view of the retailer’s information and review form, I place the form to overlap the some of the content. The analyst can toggle between the retailer’s information and the review form.</p>
+        <figure class="center add-padding">
+          <img src="images/cms-ui-design.png" alt="Proposed UI Design" />
+          <p>Proposed UI Design.</p>
+        </figure>
 
-      <figure class="center add-padding"><img src="images/cms-ui-design.png" alt="Proposed UI Design"/>
-        <p>Proposed UI Design.</p>
-      </figure>
+        <h3>The Response</h3>
+        <p>
+          The Business Analyst and I presented the updated user flow and
+          wireframes to the stakeholders and received a positive response to the
+          design presented. The first version of the review form went into
+          production a few months later.
+        </p>
 
-      <h3>The Response</h3>
-      <p>The Business Analyst and I presented the updated user flow and wireframes to the stakeholders and received a positive response to the design presented. The first version of the review form went into production a few months later.</p>
-      
-      <p class="smallest-text"><a href="/">&laquo; Back to Work Samples</a></p>
-    
-    </section>
-    <footer>
-      <p>&copy; 2020. A basic website. Always a work in progress :).</p>
-    </footer>
-  </div>
-</body>
+        <p class="smallest-text">
+          <a href="/">&laquo; Back to Work Samples</a>
+        </p>
+      </section>
+      <footer>
+        <p>&copy; 2021. A basic website. Always a work in progress :).</p>
+      </footer>
+    </div>
+  </body>
 </html>
