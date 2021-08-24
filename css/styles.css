@@ -2,41 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 
 body {
-  color: #656565;
+  color: #717171;
   font-family: "Cardo", serif;
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
 }
 
 .wrapper {
   position: relative;
 }
 
-.wrapper .content {
+.content {
   margin: 0 auto;
   width: 65%;
   padding: 5% 10%;
-  color: #242424;
 }
-.wrapper .intro {
-  background-color: #f6f6f5;
+.intro {
+  background-color: rgba(246, 246, 245, 0.7);
   border-radius: 16px;
   margin-top: 32px;
 }
-.wrapper .intro p {
-  color: #656565;
-}
 
-.wrapper .callout p {
+.callout p {
   font-size: 20px;
   color: #717171;
 }
-.wrapper .tags {
+.tags {
   color: #76766b;
   display: inline-block;
   font-style: italic;
   margin: 8px 8px 16px 0;
   font-size: 14px;
+  padding: 4px 8px;
+  background-color: rgba(246, 246, 245, 0.7);
 }
-.wrapper .hidden-text {
+.hidden-text {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -44,20 +43,18 @@ body {
   height: 1px;
   overflow: hidden;
 }
-.wrapper .center {
+.center {
   text-align: center;
 }
-.wrapper .add-padding {
-  padding: 16px;
-}
-.wrapper footer {
+
+footer {
   border-top: 1px solid #f6f6f5;
   width: 80%;
   padding: 10px 10%;
 }
 
 nav ul {
-  font: 18px "Raleway", Helvetica, sans-serif;
+  font: 1.2rem "Raleway", Helvetica, sans-serif;
   list-style: none;
   margin: 0 0 5% 0;
   padding: 0;
@@ -86,7 +83,7 @@ nav ul li.current a {
 }
 
 h1 {
-  font: 48px "Raleway", Helvetica, sans-serif;
+  font: 4rem "Raleway", Helvetica, sans-serif;
   text-shadow: 1px 1px rgba(255, 255, 255, 0.8);
   letter-spacing: 4px;
   color: #242424;
@@ -95,31 +92,16 @@ h1 {
 
 h2 {
   color: #242424;
-  font: 36px "Raleway", Helvetica, sans-serif;
+  font: 3.6rem "Raleway", Helvetica, sans-serif;
   margin: 0;
   padding: 16px 0 0;
   text-shadow: 1px 1px rgba(236, 236, 235, 0.8);
 }
 
 h3 {
-  color: #717171;
-  font: 20px "Raleway", Helvetica, sans-serif;
+  font: 1.6rem "Raleway", Helvetica, sans-serif;
   margin: 0;
   padding: 16px 0 0;
-}
-
-h4 {
-  font: 18px "Raleway", Helvetica, sans-serif;
-  font-style: italic;
-  margin: 8px 0;
-  text-decoration: underline;
-}
-
-h5 {
-  margin: 0;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: underline;
 }
 
 a {
@@ -133,20 +115,14 @@ a:hover {
 p,
 ul,
 ol {
-  font: 18px "Cardo", serif;
-}
-
-ul.no-list-style {
-  list-style: none;
-  margin: 16px;
-  padding: 0;
+  font: 1.2rem "Cardo", serif;
 }
 
 p {
-  margin: 0 0 25px;
+  margin: 16px 0;
 }
 p.smallest-text {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 .styled {
   color: darkred;
